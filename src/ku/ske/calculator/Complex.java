@@ -1,12 +1,15 @@
 package ku.ske.calculator;
 
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
 /**
  * Complex number
  * @author mapfap
  *
  */
+
+@XmlType( propOrder={"real", "imag"} )
 @XmlRootElement
 public class Complex {
 	
